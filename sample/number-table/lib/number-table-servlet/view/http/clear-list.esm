@@ -1,0 +1,17 @@
+<%= (header) %>
+<h1>Number Table: clear list</h1>
+<p>
+	<a href="<%= (href :new-session #t :action 'main) %>">NEW GAME</a>
+</p>
+<ul>
+<% (dolist (cl (get-clear-list)) %>
+	<li>
+			<%= (clear-list-user cl) %>: <%= (clear-list-score cl) %>:
+			<%= (clear-list-time cl) %>
+			<% (if (string=? (get-user) (clear-list-user cl)) %>
+				<em>YOU!!!</em>
+			<% ) %>
+	</li>
+<% )%>
+</ul>
+<%= (footer) %>

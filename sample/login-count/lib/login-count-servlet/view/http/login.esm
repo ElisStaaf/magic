@@ -1,0 +1,9 @@
+<%= (header) %>
+<h1>Login Count: login</h1>
+<%= (show-message) %>
+<%= (form :action 'main) %>
+	<p>User: <%= (user-name-input) %></p>
+	<p>Password: <%= (password-input) %></p>
+	<p><input type="submit" value="LOGIN!" /></p>
+</form>
+<%= (footer) %>

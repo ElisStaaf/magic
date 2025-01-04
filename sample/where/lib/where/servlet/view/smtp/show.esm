@@ -1,0 +1,5 @@
+<%= (header) %>
+In <%= (get-value 'where "??") %>.
+Prev: <%= (get-value 'prev "??") %>.
+Move to <%= (move-links) %>.
+<%= (footer) %>

@@ -1,0 +1,17 @@
+<%= (header) %>
+<h1>Number Table</h1>
+<% (when (get-cycle-value :message #f) %>
+<h2><%= (h (get-cycle-value :message)) %></h2>
+<% ) %>
+<p>
+	<a href="<%= (href :new-session #t :action 'login) %>">NEW GAME</a>
+	/
+	<%= (get-value 'count) %>
+	/
+	<%= (get-user) %>
+	/
+	<%= (get-id) %>
+</p>
+<%= (show-table) %>
+<%= (move-navi) %>
+<%= (footer) %>

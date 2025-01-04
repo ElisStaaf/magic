@@ -1,0 +1,17 @@
+<%= (header) %>
+<h1>Login Count</h1>
+<%= (show-message) %>
+<p>
+	<a href="<%= (href :new-session #t :action 'login) %>">LOGOUT</a>
+	/
+	<a href="<%= (href :action 'countup) %>">COUNTUP</a>
+	(<%= (get-value 'count) %>)
+	/
+	Total Login:
+	<%= (get-servlet-value 'count) %>
+	/
+	<%= (get-user) %>
+	/
+	<%= (get-id) %>
+</p>
+<%= (footer) %>

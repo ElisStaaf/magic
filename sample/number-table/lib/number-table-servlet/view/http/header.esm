@@ -1,0 +1,12 @@
+<html>
+<head>
+	<title>Number Table Example</title>
+	<style>
+	table, tr, td
+	{
+		border: 1px solid #000;
+		padding: 2px;
+	}
+	</style>
+</head>
+<body>

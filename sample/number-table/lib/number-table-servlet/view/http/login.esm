@@ -1,0 +1,12 @@
+<%= (header) %>
+<h1>Number Table: login</h1>
+<% (when (get-cycle-value :message #f) %>
+<h2><%= (h (get-cycle-value :message)) %></h2>
+<% ) %>
+<a href="<%= (href :action 'add-user) %>">Add user</a>
+<%= (form :action 'main) %>
+	<p>User: <%= (user-name-input) %></p>
+	<p>Password: <%= (password-input) %></p>
+	<p><input type="submit" value="LOGIN!" /></p>
+</form>
+<%= (footer) %>

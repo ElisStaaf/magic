@@ -1,0 +1,17 @@
+<table>
+	<tr>
+		<td></td>
+		<td><%= (navi-link 'north) %></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><%= (navi-link 'west) %></td>
+		<td></td>
+		<td><%= (navi-link 'east) %></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><%= (navi-link 'south) %></td>
+		<td></td>
+	</tr>
+</table>

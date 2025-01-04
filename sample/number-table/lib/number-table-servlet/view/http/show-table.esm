@@ -1,0 +1,10 @@
+<table>
+<% (for-each (lambda (row) %>
+  <tr>
+<%           (for-each (lambda (cell)  %>
+    <td><%=            (h cell)  %></td>
+<%                     ) row) %>
+  </tr>
+<%           )
+             (get-value 'table)) %>
+</table>
